@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Save Image To Local Storage</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <h1>Save Image To Local Storage</h1>
+        <div class="mb-3">
+          <input type="file" class="form-control" id="myFileInput" />
+        </div>
+        <button id="removeImageBtn" class="btn btn-danger">Remove</button>
+        <img src="./images/upload.png" id="imgPreview" alt="Preview" />
+      </div>
+
+      <div class="wrapper">
+        <h1>Save Image From Web into a blob</h1>
+        <button id="convertBase64Btn" class="btn btn-primary">
+          Convert base64-encoded image data
+        </button>
+        <button id="downloadImageBtn" class="btn btn-success">
+          Download Image
+        </button>
+        <a href="#" id="download">Download Image Data</a>
+
+        <div class="loader"></div>
+        <img src="./images/upload.png" id="imgPreviewBlob" alt="Preview" />
+      </div>
+    </div>
+    <script src="/script.js"></script>
+  </body>
+</html>
